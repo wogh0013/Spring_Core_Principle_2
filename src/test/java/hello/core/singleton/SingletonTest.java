@@ -51,4 +51,14 @@ public class SingletonTest {
         //3. 참조값이 같은 것을 확인
         assertThat(memberService1).isSameAs(memberService2);
     }
+
+    @Test
+    void configurationDeep(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+        //AppConfig도 스프링 빈으로 등록된다.
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+        System.out.println("bean = " + bean.getClass());
+    }
 }
