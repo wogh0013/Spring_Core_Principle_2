@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
+//컴포넌트
 @Component
 public class MemoryMemberRepository implements MemberRepository{
 
