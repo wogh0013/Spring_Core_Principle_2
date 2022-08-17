@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean //스프링 컨테이너에 등록
+    @Bean //@Bean은 스프링 컨테이너에 등록해주는 역할을 한다.
     public MemberService memberService(){
         return new MemberServiceImpl(memberRepository());
     }
