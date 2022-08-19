@@ -11,6 +11,7 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+//설정 정보
 @Configuration
 public class AppConfig {
 
